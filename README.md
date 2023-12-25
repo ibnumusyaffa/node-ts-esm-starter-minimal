@@ -1,13 +1,10 @@
 # Node Typescript ESM
 
-[https://starterkit-react-typescript.vercel.app](https://starterkit-react-typescript.vercel.app)
-
-## Overview
-
-Minimalistic project template for a Node.js & TypeScript with native ESM
+Minimalistic project template for a Node.js & TypeScript apps with native ESM
 
 ## Features
 
+- 💎 Node.js 18+
 - 🛠️ TypeScript 5.3
 - ⚡️ [tsx: Node.js enhanced to run TypeScript & ESM files](https://github.com/privatenumber/tsx)
 - 📁 [tsc-alias: Import path alias using `@/` prefix](https://github.com/justkey007/tsc-alias) 
