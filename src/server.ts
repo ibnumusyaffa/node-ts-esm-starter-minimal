@@ -1,11 +1,11 @@
-import express, { Request, Response, NextFunction } from "express"
-import "dotenv/config"
 import { hello } from "@/constants/message.js"
+import "dotenv/config"
+import express, { NextFunction, Request, Response } from "express"
 
 const app = express()
 const PORT = process.env.PORT || 3000
 
-app.get("/", (req, res, next) => {
+app.get("/", (req: Request, res: Response, next: NextFunction) => {
   try {
     return res.send({ message: hello })
   } catch (error) {
@@ -13,7 +13,7 @@ app.get("/", (req, res, next) => {
   }
 })
 
-app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
+app.use((err: Error, req: Request, res: Response) => {
   if (process.env.NODE_ENV === "development") {
     console.error(err)
   }
